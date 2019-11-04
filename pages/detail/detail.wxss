@@ -1,1 +1,8 @@
 /* pages/detail/detail.wxss */
+.detail {
+  margin-bottom: 120rpx;
+}
+
+.topImg swiper {
+  height: 870rpx;
+}

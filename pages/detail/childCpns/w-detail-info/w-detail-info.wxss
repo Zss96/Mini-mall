@@ -1,0 +1,38 @@
+/* pages/detail/childCpns/w-detail-info/w-detail-info.wxss */
+.title {
+   position: relative;
+   padding: 10rpx 30rpx;
+   font-size: 32rpx;
+}
+.line {
+   width: 180rpx;
+   height: 1px;
+   background: #666;
+   margin: 30rpx 0;
+   position: relative;
+}
+.end {
+  float: right;
+}
+.start::before, .end::after {
+  content: "";
+  position: absolute;
+  width: 10rpx;
+  height: 10rpx;
+  background: #333;
+}
+.start::before {
+  bottom: 0;
+}
+.end::after {
+  bottom: 0;
+  right: 0;
+}
+.content-key {
+  margin: 50rpx 0 30rpx 30rpx;
+  font-size: 32rpx;
+}
+
+.content image {
+  width: 100%;
+}

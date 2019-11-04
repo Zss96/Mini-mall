@@ -1,0 +1,81 @@
+/* pages/detail/childCpns/w-shop-info/w-shop-info.wxss */
+.shop-info {
+  padding: 16rpx 16rpx 50rpx;
+  border-bottom: 12rpx solid #f2f2f2;
+}
+
+.title {
+  margin-top: 30rpx;
+}
+
+.title image {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 46rpx;
+  border: 1px solid rgba(200,200,200,.6);
+  vertical-align: middle;
+}
+
+.title text {
+  margin-left: 18rpx;
+  position: relative;
+  top: 6rpx;
+}
+.sell-info {
+  display: flex;
+  margin: 40rpx 0;
+}
+
+.sell-item {
+  flex: 1;
+  text-align: center;
+
+}
+.count {
+    display: flex;
+    margin: 20rpx 0;
+    border-right: 1px solid rgba(200,200,200,.6);
+}
+.grade {
+  font-size: 28rpx;
+  padding: 0 20rpx;
+  text-align: left; 
+}
+.count-item {
+  flex: 1;
+}
+.grade-item {
+  display: flex;
+}
+.grade-item text {
+  display: inline-block;
+  margin-top: 8rpx;
+  text-align: center;
+}
+.grade-name {
+  width: 200rpx;
+}
+.grade-score {
+  flex:1;
+}
+.grade-better {
+  flex:1;
+}
+.good {
+  color: #ff5777;
+}
+
+.less {
+  color: #5ea732;
+}
+.enter { 
+  text-align: center;
+}
+
+.enter button::after {
+  border: none;
+}
+
+.enter button {
+  padding: 8rpx 100rpx;
+}

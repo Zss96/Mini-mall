@@ -1,0 +1,26 @@
+<!--pages/detail/childCpns/w-params-info/w-params-info.wxml-->
+<view class="params-info">
+    <!--尺码信息  -->
+    <view class="size">
+      <block wx:for="{{itemParams.rule.tables}}" wx:key="index">
+        <view class='size-table'>
+          <block wx:for="{{item}}" wx:for-item="list" wx:for-index="listIndex" wx:key="listIndex">
+            <view  class='size-row'>
+              <block wx:for="{{list}}" wx:for-item="row" wx:for-index="rowIndex" wx:key="rowIndex">
+                <view class="size-item">{{row}}</view>
+              </block>
+            </view>
+          </block>
+        </view>
+      </block>
+    </view>
+    <!--其他信息  -->
+    <view>
+      <block wx:for="{{itemParams.info.set}}" wx:key="index">
+        <view class="info-row">
+            <view class="key">{{item.key}}</view>
+            <view class="value">{{item.value}}</view>
+        </view>
+      </block>
+    </view>
+</view>

@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.goods> .item {
+.item {
   width: 48%;
   position: relative;
   margin-top: 16rpx;

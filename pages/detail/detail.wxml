@@ -1,2 +1,29 @@
 <!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<scroll-view class="detail" scroll-y>
+  <!-- 1.轮播图 -->
+  <w-swiper list="{{topImg}}" class="topImg"/>
+  <!-- 2.商品基本信息 -->
+  <w-base-info baseInfo="{{baseInfo}}"/>
+  <!-- 3.商店信息 -->
+  <w-shop-info shopInfo="{{shopInfo}}"/>
+  <!-- 4.详细信息 -->
+  <w-detail-info detailInfo="{{detailInfo}}"/>
+  <!-- 5.参数 -->
+  <w-params-info itemParams="{{itemParams}}"/>
+  <!-- 6.评论 -->
+  <w-comment-info commentInfo="{{commentInfo}}"/>
+  <!-- 7.推荐 -->
+  <w-recommend recommends="{{recommends}}"/>
+
+
+</scroll-view>
+
+<!-- 8购物车 -->
+<w-bottom-bar  bind:addcart="onAddCart"/>
+
+<!-- 9.回到顶部 -->
+<w-back-top wx:if="{{showBackTop}}" />
+
+
+
+

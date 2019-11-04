@@ -44,9 +44,11 @@ Page({
   //网络请求函数
   _getMultidata(){
     getMultiData().then(res => {
-      // console.log(res)
+      console.log(res)
       //取出轮播图数据
-      const banners = res.data.data.banner.list;
+      const banners = res.data.data.banner.list.map(item => {
+        return item.image
+      });
       const recommends = res.data.data.recommend.list;
 
       //将数据存在data中

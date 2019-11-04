@@ -3,7 +3,7 @@
         indicator-dots indicator-active-color="#ff5777">
  <block wx:for="{{list}}" wx:key="{{index}}">
      <swiper-item class="swiper-item">
-      <image src="{{item.image}}" mode="widthFix"/>
+      <image src="{{item}}" mode="widthFix"/>
      </swiper-item>
   </block>
 </swiper>

@@ -1,0 +1,16 @@
+<!--pages/detail/childCpns/w-detail-info/w-detail-info.wxml-->
+<view class="detail-info">
+  <view class="title">
+    <view class="start line"></view>
+    <view class="desc">{{detailInfo.desc}}</view>
+    <view class="end line"></view>
+  </view>
+  <view class="content">
+    <block wx:for="{{detailInfo.detailImage}}" wx:key="index">
+      <view class="content-key">{{item.key}}</view>
+      <block wx:for="{{item.list}}" wx:for-item="imgs" wx:for-index="imgIndex" wx:key="{{imgIndex}}">
+        <image src="{{imgs}}" mode="widthFix"/>
+      </block>
+    </block>
+  </view>
+</view>
