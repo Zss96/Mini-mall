@@ -1,19 +1,11 @@
-// pages/profile/profile.js
+// pages/test/test.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    orderList: [
-      { icon: 'message.png', info: '我的消息' },
-      { icon: 'pointer.png', info: '积分商城' },
-      { icon: 'vip.png', info: '会员卡' },
-    ],
-    serviceList: [
-      { icon: 'cart.png', info: '我的购物车' },
-      { icon: 'app.png', info: '下载购物APP' },
-    ]
+    array: ['美国', '中国', '巴西', '日本'],
   },
 
   /**
@@ -70,5 +62,11 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
 })
